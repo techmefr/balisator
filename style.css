@@ -1,0 +1,106 @@
+body {
+  background-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #333333;
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul li:hover > ul,
+nav ul li:focus-within > ul {
+  display: block;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+.container {
+  margin: 1em;
+}
+meter {
+  width: 100%;
+  min-width: 2em;
+  font-size: 2em;
+  margin: 0 1empx;
+}
+progress {
+  width: 100%;
+  min-width: 2em;
+  height: 2em;
+}
+.container:has(span) {
+  background-color: lightblue;
+}
+section button:not(.special) {
+  background-color: #28a745;
+  color: #fff;
+}
+button {
+  padding: 1em;
+  font-size: 1em;
+}
+.container section {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.container section a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container section:target {
+  border: 2px solid #d4d4d4;
+  background-color: #ffffcc;
+}
